@@ -1,10 +1,13 @@
 const ListaSuspensa = (props) => {
-  console.log(props.item)
+  console.log(props.item);
+
   return (
-    <div>
+    <div className="lista-suspensa">
       <label>{props.label}</label>
       <select>
-        {props.itens.map(item => <option>{item}</option>)}
+        {props.itens.map((item, index) => {
+          return <option key={item}>{item}</option>;
+        })}
       </select>
     </div>
   );
