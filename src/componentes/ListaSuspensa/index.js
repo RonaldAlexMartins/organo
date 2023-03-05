@@ -1,3 +1,5 @@
+import './ListaSuspensa.css'
+
 const ListaSuspensa = (props) => {
   console.log(props.item);
 
@@ -10,7 +12,7 @@ const ListaSuspensa = (props) => {
         })}
       </select>
     </div>
-  );
+  ); 
 };
 
 export default ListaSuspensa;
