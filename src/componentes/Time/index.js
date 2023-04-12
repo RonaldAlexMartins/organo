@@ -1,7 +1,7 @@
 import Colaborador from "../colaborador";
 import "./Time.css";
 
-const Time = (props, time) => {
+const Time = (props, time, colaboradores) => {
   const css = { backgroundColor: time.corSecundaria, backgroundImage: 'url(/imagens/fundo.png)' }  
   return (
     
